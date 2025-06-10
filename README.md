@@ -27,13 +27,16 @@ This project demonstrates containerizing an Express Cart application using Docke
 
 After doing all the steps we can access our Application at http://localhost:1111
 
-Some screenshots of our Application are below:
-url: http://localhost:1111
- ![App Screenshot](images/Screenshot 2025-06-10 at 6.03.56 PM.png)
+### Screenshots:
 
-url: http://localhost:1111/login
- ![App Screenshot](images/Screenshot 2025-06-10 at 6.04.09 PM.png)
+- **Home Page** 
+ ![Home_Page](https://github.com/skumargrid/Devops_Assessment1/blob/master/images/Screenshot%202025-06-10%20at%206.03.56%E2%80%AFPM.png)
 
-url: http://localhost:1111/dashboard
- ![App Screenshot](images/Screenshot 2025-06-10 at 6.04.35 PM.png)
+- **Dashboard** 
+ ![Dashboard](https://github.com/skumargrid/Devops_Assessment1/blob/master/images/Screenshot%202025-06-10%20at%206.04.35%E2%80%AFPM.png)
+
+- **Login Page** 
+ ![Login](https://github.com/skumargrid/Devops_Assessment1/blob/master/images/Screenshot%202025-06-10%20at%206.04.09%E2%80%AFPM.png)
+
+
 
