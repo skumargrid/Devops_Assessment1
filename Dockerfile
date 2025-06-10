@@ -1,25 +1,13 @@
-FROM mhart/alpine-node:8
+FROM node:18-alpine
 
-ENV NODE_VERSION 8.9.4
+WORKDIR /app
 
-RUN apk add --no-cache make gcc g++ python bash
-
-WORKDIR /var/expressCart
-
-COPY lib/ /var/expressCart/lib/
-COPY bin/ /var/expressCart/bin/
-COPY config/ /var/expressCart/config/
-COPY public/ /var/expressCart/public/
-COPY routes/ /var/expressCart/routes/
-COPY views/ /var/expressCart/views/
-
-COPY app.js /var/expressCart/
-COPY package.json /var/expressCart/
-COPY deploy.js /var/expressCart/
+COPY package*.json ./
 
 RUN npm install
 
-VOLUME /var/expressCart/data
+COPY . .
 
 EXPOSE 1111
-ENTRYPOINT ["npm", "start"]
+
+CMD ["npm","start"]
